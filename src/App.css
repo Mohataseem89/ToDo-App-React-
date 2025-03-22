@@ -1,0 +1,168 @@
+     body {
+      background: linear-gradient(135deg, #6e57e0, #9b72f4);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+      overflow-x: hidden;
+    }
+    
+    h1 {
+      text-align: center;
+      font-size: 3.5rem;
+      margin-top: 20px;
+      text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+      animation: fade-in 1.5s ease-in-out;
+    }
+    
+    .input {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+      animation: slide-down 1.5s ease-in-out;
+    }
+    
+    .input > input {
+      width: 350px;
+      height: 45px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 15px;
+      padding: 0 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    
+    .input > input:focus {
+      outline: none;
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.6);
+    }
+    
+    .input > button {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      font-size: 2rem;
+      margin-top: 15px;
+      background: linear-gradient(135deg, #ff7c3b, #ffa63b);
+      color: white;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3), 0 0 10px rgba(255, 165, 0, 0.5);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    .input > button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 165, 0, 0.8);
+    }
+    
+    .input > button::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 20%, transparent 70%);
+      opacity: 0;
+      transform: scale(0);
+      animation: goo-animation 1s infinite ease-in-out;
+    }
+    
+    @keyframes goo-animation {
+      0%, 100% {
+        opacity: 0.5;
+        transform: scale(0.8);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
+    
+    .container {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      animation: fade-in 1.5s ease-in-out;
+    }
+    
+    .todo {
+      width: 400px;
+      font-size: 1.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 20px;
+      background-color: #ffffff;
+      color: #444;
+      padding: 15px 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transform: scale(0.95);
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+      opacity: 0;
+      animation: pop-up 0.5s forwards;
+    }
+    
+    .todo:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+    
+    .action > button {
+      background-color: #ff5c5c;
+      color: white;
+      height: 40px;
+      width: 100px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+      box-shadow: 0 3px 10px rgba(255, 0, 0, 0.3);
+    }
+    
+    .action > button:hover {
+      background-color: #e63939;
+      transform: scale(1.1);
+    }
+    
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes slide-down {
+      0% {
+        opacity: 0;
+        transform: translateY(-30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes pop-up {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
