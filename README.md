@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-# React + Vite
+To-Do App
+The To-Do App is a sleek and responsive task management application built using React. It features a user-friendly interface designed to help you organize your daily tasks efficiently. With the use of modern CSS, the app incorporates smooth hover effects for an interactive user experience and adapts seamlessly to different screen sizes, ensuring a responsive layout across all devices.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Key Features:
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# ToDo-App-React-
-A simple and efficient To-Do App built with React, allowing users to add, delete, and mark tasks as complete. With a clean and intuitive UI, this app helps users stay organized and manage their daily tasks effortlessly.
->>>>>>> aeffa0cc0161d01c07e17cbfae2367b2f14e0c2b
+Task Management: Add, edit, and delete tasks effortlessly.
+Responsive Design: Optimized for mobile, tablet, and desktop screens.
+Hover Effects: CSS hover animations for buttons and interactive elements enhance usability.
